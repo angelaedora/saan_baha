@@ -1,0 +1,14 @@
+{
+  "name": "saan-baha-auth-edge",
+  "version": "1.0.0",
+  "description": "Lambda@Edge JWT validator for Saan Baha flood map",
+  "main": "auth.js",
+  "scripts": {
+    "install-prod": "npm ci --omit=dev",
+    "bundle": "npm ci --omit=dev && zip -r auth.zip auth.js node_modules/"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2",
+    "jwks-rsa": "^3.1.0"
+  }
+}
